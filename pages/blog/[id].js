@@ -13,6 +13,7 @@ export default function BlogPost({ postData }) {
                 </Link>
             </div>
             <p>{postData.date}</p>
+            <div dangerouslySetInnerHTML={{ __html: postData.htmlContent }} />
         </Layout>
     )
 }
@@ -28,7 +29,7 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params }) {
     // fetch necessary data fro the blob post using params.id
-    const postData = getPostData(params.id)
+    const postData = await getPostData(params.id)
     return {
         props: {
             postData

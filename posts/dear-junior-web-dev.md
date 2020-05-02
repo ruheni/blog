@@ -12,6 +12,7 @@ Hello, everyone, 👋. It's been a while since my last post on dev.to 😪. I ha
 Update: I landed an internship as a front-end developer 🥳.
 
 ![celebratory gif](https://media.giphy.com/media/l3q2Z6S6n38zjPswo/giphy.gif)
+
 The last 3 months have been packed with deadlines, Angular and learning (both domain knowledge and my technical skills. I recently learnt I suck at coding (tee-hee), but I am confident that will change with time). It was actually my first time interacting with Angular and I can confirm that the learning curve has been **really really** steep (despite the frustration of understanding of how it works under the hood, it has pushed me out of my comfort zone and explore a new perspective building web applications).
 
 I have gained a couple of skills and knowledge/experience I would love to share with the rest of the community. I am in no way an expert I therefore recommend you take my advice with a grain of salt read on the topic, but I hope it will be of help. The list I produced is not exhaustive and in no order. Feel free sharing in the comments the important skills one must learn as a junior front-end developer.
