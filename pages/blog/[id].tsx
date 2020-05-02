@@ -4,19 +4,25 @@ import React from 'react'
 import Date from '../../components/date'
 import Layout from '../../components/layout'
 import { getAllPostIds, getPostData } from '../../lib/posts'
+import Head from 'next/head'
 
 export const BlogPost = ({ postData }) => {
     return (
-        <Layout title={postData.title}>
-            <h1>{postData.title}</h1>
-            <Date dateString={postData.date} />
-            <div dangerouslySetInnerHTML={{ __html: postData.htmlContent }} />
-            <div>
-                <Link href="/blog" as="/blog">
-                    <a>&larr; Back to blog</a>
-                </Link>
-            </div>
-        </Layout>
+        <>
+            <Head>
+                <title>{postData.title}</title>
+            </Head>
+            <Layout title={postData.title}>
+                <h1>{postData.title}</h1>
+                <Date dateString={postData.date} />
+                <div dangerouslySetInnerHTML={{ __html: postData.htmlContent }} />
+                <div>
+                    <Link href="/blog" as="/blog">
+                        <a>&larr; Back to blog</a>
+                    </Link>
+                </div>
+            </Layout>
+        </>
     )
 }
 
