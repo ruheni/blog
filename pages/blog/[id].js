@@ -14,7 +14,7 @@ export default function BlogPost({ postData }) {
                 </Link>
             </div>
             <Date dateString={postData.date} />
-            <div dangerouslySetInnerHTML={{ __html: postData.htmlContent }} allowdangeroushtml="true" />
+            <div dangerouslySetInnerHTML={{ __html: postData.htmlContent }} />
         </Layout>
     )
 }
