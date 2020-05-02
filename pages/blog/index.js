@@ -1,27 +1,26 @@
-import Head from 'next/head'
+import Link from 'next/link'
 import React from 'react'
-import { getSortedPostsData } from '../lib/posts'
+import Layout from '../../components/layout'
+import { getSortedPostsData } from '../../lib/posts'
 
 export default function Blog({ allPostsData }) {
     return (
-        <>
-            <Head>
-                <title>Blog | I write as well</title>
-            </Head>
-            <h1>Hello worldd</h1>
+        <Layout title="📝 Blog | I write as well">
+            <h1>Blog</h1>
             <ul>
                 {allPostsData.map(({ id, date, title }) => (
                     <li key={id}>
-                        {title}
+                        <Link href="/blog/[id]" as={`/blog/${id}`}>
+                            <a>
+                                {title}
+                            </a>
+                        </Link>
                         <br />
                         {date}
-                        <br />
-                        <code>{id}</code>
                     </li>
                 ))}
-
             </ul>
-        </>
+        </Layout>
     )
 }
 

@@ -1,15 +1,11 @@
 import React from 'react'
-import Head from 'next/head'
+import Layout from '../components/layout'
 
 export default function Index() {
     return (
-        <>
-            <Head>
-                <title>🐱‍👤 Ruheni Alex</title>
-                <link rel="stylesheet" href="public/favicon.ico" />
-            </Head>
+        <Layout title="Ruheni Alex">
             <h1>🐱‍👤 coder</h1>
-        </>
+        </Layout>
     )
 }
 /**

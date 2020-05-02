@@ -4,7 +4,7 @@ published: true
 description: Note to any aspiring and junior front-end developers
 tags: #frontend, #javascript, #angular, #beginners
 cover_image: https://images.unsplash.com/photo-1499750310107-5fef28a66643?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80
-date: '20-04-2020'
+date: '2020-04-20'
 ---
 
 Hello, everyone, 👋. It's been a while since my last post on dev.to 😪. I have been procrastinating a lot the last few weeks but I'm now doing it 😋.

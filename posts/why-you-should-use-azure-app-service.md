@@ -4,7 +4,7 @@ published: true
 description: Perhaps I can give you a reason to switch to Azure from your current deployment platform
 tags: #azure #web #cloud #APIs
 cover_image: https://aspblogs.blob.core.windows.net/media/scottgu/WindowsLiveWriter/AnnouncingthenewAzureAppService_122D1/image_4.png
-date: '24-11-2019'
+date: '2019-11-24'
 ---
 
 I am a hippie when it comes to technology and I have accepted who I am 😔. I have a bad habit of switching very easily from one technology to another and maybe a few commitment issues when it comes to JavaScript frameworks of choice (story for another day). Another thing about me is that I am a big fan of abstraction, not having to deal with the low level stuff - it gets boring at times having to deal with numerous configurations especially infrastructure...maybe I using it is just an excuse for my laziness 🙊.

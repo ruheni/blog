@@ -4,7 +4,7 @@ published: true
 description: My first JAMstack application
 tags: #jamstack, #javascript, #discuss
 cover_image: https://media.giphy.com/media/13EtQIwmTqNDji/giphy.gif
-date: '13-04-2020'
+date: '2020-04-13'
 ---
 
 I'm guessing everytime someone mentions JAMStack, front-end developers feel like this...

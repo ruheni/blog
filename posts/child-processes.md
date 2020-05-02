@@ -3,7 +3,7 @@ title: Child Processes👶
 published: true
 description: An introduction to child processes with NodeJs
 tags: webdev, JavaScript, NodeJs
-date: '01-06-2019'
+date: '2019-06-01'
 ---
 
 # Child Processes

@@ -4,7 +4,7 @@ published: true
 description: this is a simple introduction to the browser's Notification API with no use of external APIs
 cover_image: https://apps4u.com/wp-content/uploads/2017/08/notifications.png
 tags: JavaScript, browser_apis, beginner
-date: '28-03-2019'
+date: '2019-03-28'
 ---
 
 The Notifications API enables a website to send notifications outside the user’s browser, like system notifications. This allows the website or webapp to send information to the user in the background.
