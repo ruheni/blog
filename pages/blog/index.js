@@ -16,7 +16,6 @@ export default function Blog({ allPostsData }) {
                                 {title}
                             </a>
                         </Link>
-                        <br />
                         <Date dateString={date} />
                     </li>
                 ))}

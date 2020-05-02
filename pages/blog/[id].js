@@ -8,13 +8,13 @@ export default function BlogPost({ postData }) {
     return (
         <Layout title={postData.title}>
             <h1>{postData.title}</h1>
-            <div>
-                <Link href="/blog" as="/blog">
-                    <a>← Back to blog</a>
-                </Link>
-            </div>
             <Date dateString={postData.date} />
             <div dangerouslySetInnerHTML={{ __html: postData.htmlContent }} allowdangeroushtml="true" />
+            <div>
+                <Link href="/blog" as="/blog">
+                    <a>&larr; Back to blog</a>
+                </Link>
+            </div>
         </Layout>
     )
 }

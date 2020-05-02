@@ -32,6 +32,7 @@ State is described as having a central source of truth for your application. Not
 Sometimes, it seems like the designer is always out to get you with some crazy wireframes or prototypes. You might find yourself building out the UI and get stuck occasionally. I mean, it's HTML, it can't be that hard. Working with design systems/UI libraries such as Material and bootstrap help get the job done fast and have a working product. Not all frontend developers, me included, are fans of CSS but you'll have to learn it to customize the existing styles and accomplish whatever has been stated in the design. If you are a hardcore CSS fan, go ahead and knock yourself out writing them styles🙃😁
 
 ![CSS](/assets/css-snippet.jpg)
+
 _Photo by Pankaj Patel on Unsplash_
 
 #### 4. Working with APIs

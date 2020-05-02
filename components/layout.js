@@ -3,6 +3,7 @@ import Head from 'next/head'
 export const siteTitle = 'Ruheni Alex'
 
 export default function Layout({ children, title }) {
+    const date = new Date().getFullYear()
     return (
         <>
             <Head>
@@ -14,9 +15,13 @@ export default function Layout({ children, title }) {
                 <meta property="og:site_name" content="Ruheni Alex | Software Developer" />
                 <meta name="twitter:card" content="summary_large_image" />
                 <title>{title}</title>
+                <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600&display=swap" rel="stylesheet"></link>
             </Head>
-            <main>{children}</main>
+            <main className="container">{children}</main>
+            <footer className="copyright">
+                <p>&copy; {date}</p>
+            </footer>
+            {/* <script src="/prism.js"></script> */}
         </>
-
     )
 }
