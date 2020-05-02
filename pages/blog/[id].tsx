@@ -1,15 +1,16 @@
-import React from 'react'
+import { GetStaticPaths, GetStaticProps } from 'next'
 import Link from 'next/link'
+import React from 'react'
+import Date from '../../components/date'
 import Layout from '../../components/layout'
 import { getAllPostIds, getPostData } from '../../lib/posts'
-import Date from '../../components/date'
 
-export default function BlogPost({ postData }) {
+export const BlogPost = ({ postData }) => {
     return (
         <Layout title={postData.title}>
             <h1>{postData.title}</h1>
             <Date dateString={postData.date} />
-            <div dangerouslySetInnerHTML={{ __html: postData.htmlContent }} allowdangeroushtml="true" />
+            <div dangerouslySetInnerHTML={{ __html: postData.htmlContent }} />
             <div>
                 <Link href="/blog" as="/blog">
                     <a>&larr; Back to blog</a>
@@ -19,7 +20,7 @@ export default function BlogPost({ postData }) {
     )
 }
 
-export async function getStaticPaths() {
+export const getStaticPaths: GetStaticPaths = async () => {
     // return a list of possible value for id
     const paths = getAllPostIds()
     return {
@@ -28,7 +29,7 @@ export async function getStaticPaths() {
     }
 }
 
-export async function getStaticProps({ params }) {
+export const getStaticProps: GetStaticProps = async ({ params }) => {
     // fetch necessary data fro the blob post using params.id
     const postData = await getPostData(params.id)
     return {
@@ -37,3 +38,6 @@ export async function getStaticProps({ params }) {
         }
     }
 }
+
+
+export default BlogPost;

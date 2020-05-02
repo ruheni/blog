@@ -3,10 +3,11 @@ import React from 'react'
 import Layout from '../../components/layout'
 import { getSortedPostsData } from '../../lib/posts'
 import Date from '../../components/date'
+import { GetStaticProps } from 'next'
 
 export default function Blog({ allPostsData }) {
     return (
-        <Layout title="📝 Blog | I write as well">
+        <Layout title="?? Blog | I write as well">
             <h1>Blog</h1>
             <ul>
                 {allPostsData.map(({ id, date, title }) => (
@@ -16,6 +17,7 @@ export default function Blog({ allPostsData }) {
                                 {title}
                             </a>
                         </Link>
+                        <br />
                         <Date dateString={date} />
                     </li>
                 ))}
@@ -24,7 +26,7 @@ export default function Blog({ allPostsData }) {
     )
 }
 
-export async function getStaticProps() {
+export const getStaticProps: GetStaticProps = async () => {
     const allPostsData = getSortedPostsData()
 
     return {

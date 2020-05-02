@@ -19,7 +19,11 @@ export default function Layout({ children, title }) {
             </Head>
             <main className="container">{children}</main>
             <footer className="copyright">
-                <p>&copy; {date}</p>
+                <p>
+                    🏗  by {siteTitle}
+                    <br />
+                    &copy; {date}
+                </p>
             </footer>
             {/* <script src="/prism.js"></script> */}
         </>
