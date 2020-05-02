@@ -6,11 +6,11 @@ tags: webdev, JavaScript, NodeJs
 date: '2019-06-01'
 ---
 
-# Child Processes
+## Child Processes
 
 For this article, it will assume you have a basic understanding of NodeJs and intermediate programming knowledge in JavaScript. For you to be able to get a firm grasp of child processes, you will need have a fair understanding of streams and event emitters. The final assumption I am going to make is that you have a basic knowledge of terminal commands used to manipulate files and folders.
 
-## What exactly is a child process?
+### What exactly is a child process?
 
 A child process is a process that is created by another process. Sounds meta, right…? It is important to remember that JavaScript is single threaded and therefore we would not want to block the main thread running, otherwise our application will be slow and it won’t be able to do much really. In case you are asking “what the heck is he talking about …?”😕 don’t panic yet.
 
@@ -28,7 +28,7 @@ Since I would not want to make this tutorial too long, I will cover only `spawn(
 const { spawn, exec, execFile, fork } = require('child_process');
 ```
 
-## Spawn
+### Spawn
 
 This launches a new command in a new process. With spawn, you can pass any argument to it to carry out a given process. `spawn` is able to handle events, that is, you can register events so as to carry out a given task when the signal is sent.
 
