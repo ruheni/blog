@@ -8,7 +8,7 @@ date: '2020-04-13'
 ---
 
 I'm guessing everytime someone mentions JAMStack, front-end developers feel like this...
-![the rock smoulder](https://media.giphy.com/media/J53wyiG57vjm6RTqnz/giphy.gif)
+![the rock smoulder](/assets/the-rock-smolder.gif)
 
 And yes, I feel that way too every time someone talks about it. We cannot shut up about it either too. It's the best stack out there for building web applications (my view). Think about it, no hassle thinking about whether the server is still up because your service provider takes care of that for you (for example Netlify and Zeit). It is in fact cheap since you pay for what you use, secure, fast and your web application can auto-scale on its own. Fun, right? Just working with JavaScript, APIs and writing markup to make meaning of your data.
 
@@ -18,7 +18,7 @@ After a couple of weeks scavenging the internet for tutorials, documentation, an
 
 I stumbled onto Netlify, and decided to give it a shot, and I was beyond pleased. Click, click...your site is live. One click deployments are one of the best things that have happened for us, especially for those who don't like thinking about servers like me. The features I really love is the continuous deployment and serverless functions. No more server-side code.
 
-![pride](https://media.giphy.com/media/Nm4eUOt3074Ck/giphy.gif)
+![pride](/assets/lion-king-simba.gif)
 
 There are plenty of other service providers that allow developers to build full stack applications without worrying about backend programming such as Firebase and FaunaDB and they are remarkable. These tools have revolutionized our workflows as front-end developers. I recommend you give them a shot and share with the rest of the world your experience.
 

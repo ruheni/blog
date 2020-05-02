@@ -11,7 +11,7 @@ Hello, everyone, 👋. It's been a while since my last post on dev.to 😪. I ha
 
 Update: I landed an internship as a front-end developer 🥳.
 
-![celebratory gif](https://media.giphy.com/media/l3q2Z6S6n38zjPswo/giphy.gif)
+![celebratory gif](/assets/celebrate.gif)
 
 The last 3 months have been packed with deadlines, Angular and learning (both domain knowledge and my technical skills. I recently learnt I suck at coding (tee-hee), but I am confident that will change with time). It was actually my first time interacting with Angular and I can confirm that the learning curve has been **really really** steep (despite the frustration of understanding of how it works under the hood, it has pushed me out of my comfort zone and explore a new perspective building web applications).
 
@@ -31,7 +31,7 @@ State is described as having a central source of truth for your application. Not
 
 Sometimes, it seems like the designer is always out to get you with some crazy wireframes or prototypes. You might find yourself building out the UI and get stuck occasionally. I mean, it's HTML, it can't be that hard. Working with design systems/UI libraries such as Material and bootstrap help get the job done fast and have a working product. Not all frontend developers, me included, are fans of CSS but you'll have to learn it to customize the existing styles and accomplish whatever has been stated in the design. If you are a hardcore CSS fan, go ahead and knock yourself out writing them styles🙃😁
 
-![CSS](https://images.unsplash.com/photo-1523437113738-bbd3cc89fb19?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=640&q=426)
+![CSS](/assets/css-snippet.jpg)
 _Photo by Pankaj Patel on Unsplash_
 
 #### 4. Working with APIs
@@ -41,7 +41,8 @@ If you are building a data driven application, there is a high likelihood you ha
 #### 5. Empower yourself
 
 This is a concept I learnt a senior engineer working on a different product. It is simple and powerful as well. Spend some time every day, to learn a new concept that would improve your workflow/ productivity. I took the initiative to learn at least one new thing before I work on anything every day. With time, this creates a snowball effect and quality of your output is guaranteed to improve with time.
-![workout gif](https://media.giphy.com/media/4ZrSnv0D9sWVSLkJ4T/giphy.gif)
+
+![workout gif](/assets/ant-workout.gif)
 
 #### 6. Asking the right questions
 
@@ -51,7 +52,7 @@ When you are new, you are expected to get stuck. It is okay to get stuck often, 
 
 I thought I knew git, honestly, I did, but after a week and a half, I found myself struggling with git. Most of my mornings have been spent rebasing because of issues here and there, merge conflicts... accidentally reverting to an older commit without having committed my work... conflicting credentials (mostly with Gerrit) ... forgetting to add the ticket number to the commit. I have occasionally deleted the local repository and started all over again 😂. It's okay to make mistakes since it shows that you are learning. Take time to learn the git commands, they are a true-life savers.
 
-![what the heck](https://media.giphy.com/media/gtDnXcTcVEXiE/giphy.gif)
+![what the heck](/assets/wtf-git.gif)
 
 #### 9. Keep an open mind
 
