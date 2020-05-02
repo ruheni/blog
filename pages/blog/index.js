@@ -2,6 +2,7 @@ import Link from 'next/link'
 import React from 'react'
 import Layout from '../../components/layout'
 import { getSortedPostsData } from '../../lib/posts'
+import Date from '../../components/date'
 
 export default function Blog({ allPostsData }) {
     return (
@@ -16,7 +17,7 @@ export default function Blog({ allPostsData }) {
                             </a>
                         </Link>
                         <br />
-                        {date}
+                        <Date dateString={date} />
                     </li>
                 ))}
             </ul>
