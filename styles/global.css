@@ -24,7 +24,8 @@ a:hover {
 	transition: 10s ease-out;
 }
 
-img {
+img,
+video {
 	max-width: 100%;
 	max-height: 100%;
 	display: block;

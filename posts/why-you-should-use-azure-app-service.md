@@ -15,7 +15,7 @@ The platforms I have mentioned are there because the abstraction taken away, for
 
 Now, Netlify and Azure App service offer one-click deploys, and the fact that you can deploy your site with only a `git push` is pure genius!! Yes, I know what you're thinking, there are platforms offering the same services too but these ones work just fine for me... we can talk about the other platforms in the comments section and I will be more than glad to try them out.
 
-![happy gif](/assets/pikachu-happy.gif)
+<video autoplay loop muted playsinline src="/assets/pikachu-happy.mp4" type="video/mp4" alt="pikachu-happy"></video>
 
 A few features I liked about Azure App service is the Deployment slots, the intuitive UI and the fact that you can link it with various services such as Azure Repos if you prefer a little more privacy, or any (most) 3rd party service you wish. The service works for both fullstack apps in your language of choice as well as APIs (REST and GraphQL). You can connect it to Azure CosmosDb (a database services on Azure) or Azure cognitive services and set up web tasks (e.g cron jobs for your newsletters) pretty easily.
 
@@ -28,6 +28,6 @@ When you deploy your application, you would definitely want to know how it is pe
 
 I hope I have given you enough reasons to switch, or just try App service for your next hobby project and get the all-powerful feeling whenever I use such a service 🙃
 
-![All powerful](/assets/powerful-hero.gif)
+<video autoplay loop muted playsinline src="/assets/powerful-hero.mp4" type="video/mp4" alt="powerful"></video>
 
 I am planning to try out Surge soon. If there are any platforms you would love you would like me to try out too, suggest them in the comments and I will be glad to try them out for my next project

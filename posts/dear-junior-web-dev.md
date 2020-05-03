@@ -11,7 +11,7 @@ Hello, everyone, 👋. It's been a while since my last post on dev.to 😪. I ha
 
 Update: I landed an internship as a front-end developer 🥳.
 
-![celebratory gif](/assets/celebrate.gif)
+<video autoplay loop muted playsinline src="/assets/celebrate.mp4" type="video/mp4" alt="celebrate"></video>
 
 The last 3 months have been packed with deadlines, Angular and learning (both domain knowledge and my technical skills. I recently learnt I suck at coding (tee-hee), but I am confident that will change with time). It was actually my first time interacting with Angular and I can confirm that the learning curve has been **really really** steep (despite the frustration of understanding of how it works under the hood, it has pushed me out of my comfort zone and explore a new perspective building web applications).
 
@@ -43,7 +43,7 @@ If you are building a data driven application, there is a high likelihood you ha
 
 This is a concept I learnt a senior engineer working on a different product. It is simple and powerful as well. Spend some time every day, to learn a new concept that would improve your workflow/ productivity. I took the initiative to learn at least one new thing before I work on anything every day. With time, this creates a snowball effect and quality of your output is guaranteed to improve with time.
 
-![workout gif](/assets/ant-workout.gif)
+<video autoplay loop muted playsinline src="/assets/ant-workout.mp4" type="video/mp4" alt="ant-workout"></video>
 
 #### 6. Asking the right questions
 
