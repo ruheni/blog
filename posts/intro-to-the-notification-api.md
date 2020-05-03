@@ -13,7 +13,7 @@ We are going to brush through the basics on how to set up and get started using 
 
 This article is meant to be beginner friendly and only the basics knowledge of programming should be sufficient.
 
-# Step one: Checking current permission status.
+### Step one: Checking current permission status.
 
 You can check the status of the permission on your browser console using Notification.permission. It has three possible values: “default”, “denied” and “granted”.
 
@@ -21,7 +21,7 @@ You can check the status of the permission on your browser console using Notific
 Notification.permission;
 ```
 
-# Step two: Granting permission.
+### Step two: Granting permission.
 
 If the website or webapp has not been granted permission to start displaying notifications
 
@@ -31,7 +31,7 @@ Notification.requestPermission().then(function (res) {
 });
 ```
 
-# Step three: Create new notification.
+### Step three: Create new notification.
 
 Once permission has been granted to the user, you can use the constructor function to initialize a new notification and pass a string in a `Notification` constructor as the parameter, i.e.
 

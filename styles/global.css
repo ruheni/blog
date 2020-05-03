@@ -74,6 +74,9 @@ h6 {
 	font-size: 1rem;
 }
 
+p {
+	margin: 25px 0;
+}
 .container {
 	padding: 0 1rem;
 }
@@ -83,6 +86,9 @@ h6 {
 	font-size: 16px;
 }
 
+a > .btn {
+	text-decoration: none;
+}
 blockquote {
 	background: #f9f9f9;
 	border-left: 10px solid #333;
