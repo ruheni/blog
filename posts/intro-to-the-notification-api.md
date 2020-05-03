@@ -85,6 +85,6 @@ As you might have noticed, the `Notification` constructor is able to take in a s
 The image used is a clipboard to signify a given task. You can view it [here](https://img.icons8.com/color/48/000000/task.png)
 
 Here's the link to the Github repo with the code used in this article:
-{% github https://github.com/ruheni/sandbox/ %}
+[github](https://github.com/ruheni/sandbox/)
 
 _This is my first technical article, if you have any suggestions on how to help improve my writing or what kind of content you would like me to write, feel free to send me a direct message_ 🙂 🙃

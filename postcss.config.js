@@ -1,10 +1,12 @@
-const purgecss = [
-    "@fullhuman/postcss-purgecss",
-    {
-        content: ["./components/**/*.js", "./pages/**/*.js"],
-        defaultExtractor: (content) => content.match(/[\w-/:]+(?<!:)/g) || [],
-    }
-]
+const purgecss = require('@fullhuman/postcss-purgecss')({
+    // paths to all templates in project
+    content: [
+        './pages/**/*.tsx',
+        './components/**/*tsx'
+    ],
+    // any special characters
+    defaultExtractor: content => content.match(/[A-Za-z0-9-_:/]+/g) || []
+})
 
 module.exports = {
     plugins: [

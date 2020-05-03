@@ -1,6 +1,14 @@
 const withPlugins = require('next-compose-plugins')
 const optimizedImages = require('next-optimized-images')
+const withPurgeCss = require('next-purgecss')
 
 module.exports = withPlugins([
-    [optimizedImages]
+    [optimizedImages],
+    withPurgeCss({
+        purgeCssPaths: [
+            'pages/**/*',
+            'components/**/*',
+        ]
+
+    })
 ])

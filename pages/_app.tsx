@@ -8,7 +8,7 @@ export default function App({ Component, pageProps }: AppProps) {
     return (
         <>
             <Head>
-                <link rel="shortcut icon" href="/public/favicon.ico" type="image/x-icon" />
+                <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
                 <meta httpEquiv="Content-Type" content="text/html;charset=UTF-8" />
                 <meta name="description" content="Ruheni Alex | Personal site/blog" />
                 <meta name="og:title" content={siteTitle} />
