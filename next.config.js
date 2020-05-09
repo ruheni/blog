@@ -1,14 +1,13 @@
-const withPlugins = require('next-compose-plugins')
 const optimizedImages = require('next-optimized-images')
-const withPurgeCss = require('next-purgecss')
 
-module.exports = withPlugins([
-    [optimizedImages],
-    withPurgeCss({
-        purgeCssPaths: [
-            'pages/**/*',
-            'components/**/*',
-        ]
-
-    })
-])
+module.exports = {
+    target: 'serverless',
+    webpack: function (config) {
+        config.module.rules.push({
+            test: /\.md$/,
+            use: 'raw-loader',
+        })
+        return config
+    },
+    optimizedImages,
+}

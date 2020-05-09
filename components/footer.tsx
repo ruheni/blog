@@ -4,7 +4,7 @@ const Footer: React.FC = () => {
     const date = new Date().getFullYear()
 
     return (
-        <footer className="copyright">
+        <footer className="footer">
             <p>
                 🏗  by Ruheni Alex
                     <br />

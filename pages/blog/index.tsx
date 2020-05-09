@@ -7,7 +7,10 @@ import { GetStaticProps } from 'next'
 
 export default function Blog({ allPostsData }) {
     return (
-        <Layout title="?? Blog | I write as well">
+        <Layout
+            title="Blog"
+            description="This is where I share my thoughts, experience and occasionally rant"
+        >
             <h1>Blog</h1>
             <ul>
                 {allPostsData.map(({ id, date, title }) => (

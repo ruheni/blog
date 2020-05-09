@@ -3,18 +3,20 @@ import Link from 'next/link'
 import React from 'react'
 import Date from '../../components/date'
 import Layout from '../../components/layout'
+import ReactMarkdown from 'react-markdown'
 import { getAllPostIds, getPostData } from '../../lib/posts'
-import Head from 'next/head'
 
 export const BlogPost = ({ postData }) => {
     return (
         <>
-            <Head>
-                <title>{postData.title}</title>
-            </Head>
-            <Layout title={postData.title}>
+            <Layout
+                title={postData.title}
+                description={postData.description}
+                previewImage={postData.cover_image}
+            >
                 <h1>{postData.title}</h1>
                 <Date dateString={postData.date} />
+                {/* <ReactMarkdown source={postData.htmlContent} /> */}
                 <div dangerouslySetInnerHTML={{ __html: postData.htmlContent }} />
                 <div>
                     <Link href="/blog" as="/blog">
