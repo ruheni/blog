@@ -1,6 +1,10 @@
 const optimizedImages = require('next-optimized-images')
+const withMDX = require('@next/mdx')({
+    extension: /\.mdx?$/
+})
 
-module.exports = {
+module.exports = withMDX({
+    pageExtensions: ['js', 'jsx', 'md', 'mdx'],
     target: 'serverless',
     webpack: function (config) {
         config.module.rules.push({
@@ -10,4 +14,4 @@ module.exports = {
         return config
     },
     optimizedImages,
-}
+})

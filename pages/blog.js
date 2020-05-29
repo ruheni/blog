@@ -1,9 +1,8 @@
 import Link from 'next/link'
 import React from 'react'
-import Layout from '../../components/layout'
-import { getSortedPostsData } from '../../lib/posts'
-import Date from '../../components/date'
-import { GetStaticProps } from 'next'
+import Date from '../components/date'
+import Layout from '../components/layout'
+import { getSortedPostsData } from '../lib/posts'
 
 export default function Blog({ allPostsData }) {
     return (
@@ -29,7 +28,7 @@ export default function Blog({ allPostsData }) {
     )
 }
 
-export const getStaticProps: GetStaticProps = async () => {
+export const getStaticProps = async () => {
     const allPostsData = getSortedPostsData()
 
     return {

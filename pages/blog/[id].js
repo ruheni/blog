@@ -28,7 +28,7 @@ export const BlogPost = ({ postData }) => {
     )
 }
 
-export const getStaticPaths: GetStaticPaths = async () => {
+export const getStaticPaths = async () => {
     // return a list of possible value for id
     const paths = getAllPostIds()
     return {
@@ -37,7 +37,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
     }
 }
 
-export const getStaticProps: GetStaticProps = async ({ params }) => {
+export const getStaticProps = async ({ params }) => {
     // fetch necessary data fro the blob post using params.id
     const postData = await getPostData(params.id)
     return {
