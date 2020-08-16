@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import Date from '@components/Date'
+import Date from './Date'
 
 export default function PostList({ posts }) {
     if (posts === 'undefined') return null
