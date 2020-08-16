@@ -1,7 +1,7 @@
+import Date from '@components/Date'
+import Layout from '@components/Layout'
+import { getAllPostIds, getPostData } from '@utils/posts'
 import Link from 'next/link'
-import { getAllPostIds, getPostData } from '../../utils/posts'
-import Date from '../../components/Date'
-import Layout from '../../components/Layout'
 
 
 export default function BlogPost({ title, description, date, htmlContent, cover_image, siteTitle, siteDescription }) {
