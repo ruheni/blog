@@ -1,11 +1,11 @@
-import Footer from "./footer";
+import Footer from "@components/Footer";
 import Head from "next/head";
 
 
-export default function Layout(props) {
+export default function Layout({ children, pageTitle, pageDescription, ...props }) {
     const twitterHandle = "https://twitter.com/ruheni_alex"
-    let title = props.title
-    let description = props.description
+    let title = pageTitle
+    let description = pageDescription
     let previewImage = props.previewImage || '/assets/avatar.svg'
 
     return (
@@ -29,11 +29,11 @@ export default function Layout(props) {
 
                 <meta name="twitter:card" content="summary_large_image" />
 
-                <title>{title || 'Ruheni Alex | JavaScript Developer'}</title>
+                <title>{title}</title>
 
                 <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
             </Head>
-            <main className="container">{props.children}</main>
+            <main className="container">{children}</main>
             <Footer />
         </>
     )

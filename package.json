@@ -4,29 +4,22 @@
 	"main": "index.js",
 	"license": "MIT",
 	"dependencies": {
-		"@mdx-js/loader": "^1.6.16",
-		"@next/mdx": "^9.5.2",
+		"@theme-ui/prism": "^0.3.0",
 		"date-fns": "^2.15.0",
-		"imagemin-mozjpeg": "^9.0.0",
-		"imagemin-optipng": "^8.0.0",
-		"imagemin-svgo": "^8.0.0",
-		"lqip-loader": "^2.2.0",
+		"gray-matter": "^4.0.2",
 		"next": "^9.5.2",
-		"next-compose-plugins": "^2.2.0",
-		"next-optimized-images": "^2.6.2",
 		"raw-loader": "^4.0.1",
 		"react": "^16.13.1",
 		"react-dom": "^16.13.1",
 		"react-markdown": "^4.3.1",
 		"remark": "^12.0.1",
-		"remark-html": "^12.0.0"
+		"remark-html": "^12.0.0",
+		"theme-ui": "^0.3.1"
 	},
 	"scripts": {
 		"dev": "next",
 		"build": "next build",
 		"start": "next start"
 	},
-	"devDependencies": {
-		"gray-matter": "^4.0.2"
-	}
+	"devDependencies": {}
 }

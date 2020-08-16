@@ -1,16 +1,33 @@
-import React from 'react'
-import Layout from '../components/layout'
+import Layout from '@components/Layout'
+import PostList from '@components/PostList'
+import { getSortedPostsData } from '@utils/posts'
 
-export default function Index() {
+const Index = ({ posts, title, ...props }) => {
+    let description = 'Hello there internet stranger👋🏾.\n My name is Alex Ruheni and I am a Software Engineer.\n This is my digital garden - where I share my thoughts, learning experience and occassional rants.'
     return (
-        <Layout>
-            <h1>👨🏾‍💻 coder</h1>
+        <Layout
+            pageTitle={title}
+            pageDescription={description}>
+            <h1 className="title">Welcome to my blog 🚀</h1>
+            <p>{description}</p>
+            <main>
+                <PostList posts={posts} />
+            </main>
         </Layout>
     )
 }
-/**
- * github
- * dev.to
- * linkedIn
- * twitter
- */
+
+export default Index
+
+export async function getStaticProps() {
+    const configData = await import(`../siteconfig.json`)
+
+    const posts = getSortedPostsData()
+
+    return {
+        props: {
+            posts,
+            title: configData.default.title,
+        }
+    }
+}

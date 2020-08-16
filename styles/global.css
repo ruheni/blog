@@ -5,18 +5,25 @@
 html,
 body {
 	padding: 0;
-	margin: 0;
 	font-family: 'IBM Plex Sans', sans-serif;
 	line-height: 2;
 	font-size: 20px;
 	max-width: 900px;
-	margin: auto;
+	margin: 20px auto;
 }
 
 * {
 	box-sizing: border-box;
 }
+.footer {
+	text-align: center;
+	font-size: 18px;
+}
 
+.date {
+	font-style: italic;
+	font-size: 16px;
+}
 a {
 	border-bottom: 2px solid #0070f3;
 	color: #222;
@@ -41,14 +48,13 @@ li {
 	margin: 0 0 20px 0;
 	padding: 0;
 }
-
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-	font-family: radnika, sans-serif;
+	font-family: inherit;
 	font-weight: 600;
 	line-height: normal;
 	margin: 20px 0;
@@ -85,11 +91,6 @@ p {
 	padding: 0 1rem;
 }
 
-.date {
-	font-style: italic;
-	font-size: 16px;
-}
-
 a > .btn {
 	text-decoration: none;
 }
@@ -113,21 +114,5 @@ blockquote:before {
 blockquote p {
 	display: inline;
 }
-
-.footer {
-	text-align: center;
-	font-size: 18px;
-}
-pre,
-code {
-	display: block;
-	max-width: fit-content;
-	/* overflow: hidden; */
-}
-/* @media (max-width: 760px)
-.blogPost {
-    display: block;
-    margin-bottom: 1.4rem;
-} */
 
 /* purgecss end ignore */
