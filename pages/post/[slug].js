@@ -1,56 +1,94 @@
-import Date from '@components/Date'
-import Layout from '@components/Layout'
-import { getAllPostIds, getPostData } from '@utils/posts'
-import Link from 'next/link'
+import { Bio } from "@components/Bio";
+import CodeBlock from "@components/CodeBlock";
+import { Image } from "@components/Image";
+import { SEO } from "@components/Seo";
+import { getAllPostIds, getPostData } from "@utils/posts";
+import Link from "next/link";
+import Date from '@components/date'
+import ReactMarkdown from "react-markdown/with-html";
 
+export default function Post({ frontmatter, excerpt, content }) {
 
-export default function BlogPost({ title, description, date, htmlContent, cover_image, siteTitle, siteDescription }) {
+  return (
+    <>
+      <SEO
+        title={frontmatter.title}
+        description={frontmatter.description || excerpt}
+      />
 
-    if (!title) return <></>
-    return (
-        <>
-            <Layout
-                pageTitle={`${siteTitle} | ${title}`}
-                pageDescription={`${siteDescription} | ${description}`}
-                previewImage={cover_image}
-            >
-                <Link href="/" as="/">
-                    <a>&larr; Back to posts</a>
-                </Link>
-                <article>
-                    <h1>{title}</h1>
-                    <Date dateString={date} />
-                    <div dangerouslySetInnerHTML={{ __html: htmlContent }} />
-                </article>
-            </Layout>
-        </>
-    )
+      <article>
+        <header className="mb-8">
+          <h1 className="mb-2 text-5xl font-black leading-none font-display">
+            {frontmatter.title}
+          </h1>
+
+          <Link href="/" as="/">
+            <a>&larr; Back to posts</a>
+          </Link>
+
+        </header>
+        <Date dateString={frontmatter.date} />
+        <ReactMarkdown
+          className="mb-4 prose lg:prose-lg dark:prose-dark"
+          escapeHtml={false}
+          source={content}
+          renderers={{ code: CodeBlock, image: MarkdownImage }}
+        />
+        <hr className="mt-4" />
+        <footer className="flex flex-wrap content-center">
+          <Bio className="mt-8 mb-16" />
+        </footer>
+      </article>
+
+      {/* <nav className="flex flex-wrap justify-between mb-10">
+        {previousPost ? (
+          <Link href={"/post/[slug]"} as={`/post/${previousPost.slug}`}>
+            <a className="text-lg font-bold">
+              ← {previousPost.frontmatter.title}
+            </a>
+          </Link>
+        ) : (
+          <div />
+        )}
+        {nextPost ? (
+          <Link href={"/post/[slug]"} as={`/post/${nextPost.slug}`}>
+            <a className="text-lg font-bold">{nextPost.frontmatter.title} →</a>
+          </Link>
+        ) : (
+          <div />
+        )}
+      </nav> */}
+    </>
+  );
 }
 
-export const getStaticPaths = async () => {
-    // return a list of possible value for id
-    const paths = getAllPostIds()
-    return {
-        paths,
-        fallback: false
+export async function getStaticPaths() {
+  const paths = getAllPostIds()
+  return {
+    paths,
+    fallback: false
+  }
+}
+
+export async function getStaticProps({ params }) {
+  const { frontmatter, excerpt, content } = await getPostData(params.slug)
+
+  return {
+    props: {
+      frontmatter,
+      excerpt,
+      content
     }
+  }
 }
 
-export const getStaticProps = async ({ params }) => {
-    const config = await import(`../../siteconfig.json`)
 
-    // fetch necessary data from the blob post using params.slug
-    const { title, date, description, htmlContent, cover_image } = await getPostData(params.slug)
 
-    return {
-        props: {
-            siteTitle: config.title,
-            siteDescription: config.description,
-            title,
-            date,
-            description,
-            htmlContent,
-            cover_image
-        }
-    }
-}
+const MarkdownImage = ({ alt, src }) => (
+  <Image
+    alt={alt}
+    src={src}
+    layout="responsive"
+    className="w-full md:self-end"
+  />
+);

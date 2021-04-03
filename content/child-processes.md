@@ -5,6 +5,7 @@ description: An introduction to child processes with NodeJs
 tags: webdev, JavaScript, NodeJs
 cover_image: 
 date: '2019-06-01'
+cannonicalUrl: ''
 ---
 
 ## Child Processes
@@ -25,7 +26,7 @@ For you to have access to this module, you will have to import it to your progra
 
 Since I would not want to make this tutorial too long, I will cover only `spawn()`.
 
-```javascript
+```js
 const { spawn, exec, execFile, fork } = require('child_process');
 ```
 

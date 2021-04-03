@@ -1,22 +1,16 @@
-import { ThemeProvider } from 'theme-ui'
-import theme from '../theme'
-import Prism from '@theme-ui/prism'
-import '../styles/global.css'
+import { ThemeProvider } from "next-themes";
+import Layout from '@components/Layout'
+import "@assets/main.css";
 
-const components = {
-    pre: ({ children }) => <>{children}</>,
-    code: Prism,
+import "typeface-open-sans";
+import "typeface-ibm-plex-mono";
+
+export default function MyApp({ Component, pageProps }) {
+  return (
+    <ThemeProvider defaultTheme="system" enableSystem={true} attribute="class">
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
+    </ThemeProvider>
+  );
 }
-
-
-export default function App({ Component, pageProps }) {
-
-    return (
-        <ThemeProvider
-            theme={theme}
-            components={components}>
-            <Component {...pageProps} />
-        </ThemeProvider >
-    )
-}
-

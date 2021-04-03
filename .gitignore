@@ -114,5 +114,8 @@ dist
 .yarn/build-state.yml
 .pnp.*
 
+yarn.lock
+package-lock.json
+
 # vscode
 .vscode

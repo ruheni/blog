@@ -1,33 +1,41 @@
+import Link from "next/link";
+import { SEO } from "@components/Seo";
+import { Bio } from "@components/Bio";
+import { getSortedPostsData } from "@utils/posts";
 import Layout from '@components/Layout'
-import PostList from '@components/PostList'
-import { getSortedPostsData } from '@utils/posts'
 
-const Index = ({ posts, title, ...props }) => {
-    let description = 'Hello there internet stranger👋🏾.\n My name is Alex Ruheni and I am a Software Engineer.\n This is my digital garden - where I share my thoughts, learning experience and occassional rants.'
-    return (
-        <Layout
-            pageTitle={title}
-            pageDescription={description}>
-            <h1 className="title">Welcome to my blog 🚀</h1>
-            <p>{description}</p>
-            <main>
-                <PostList posts={posts} />
-            </main>
-        </Layout>
-    )
+export default function Home({ posts }) {
+  return (
+    <>
+      <SEO title="All posts" />
+      <Bio className="my-14" />
+      {posts.map(({ title, description, date, slug }) => (
+        <article key={slug}>
+          <header className="mb-2">
+            <h3 className="mb-2">
+              <Link href={"/post/[slug]"} as={`/post/${slug}`}>
+                <a className="text-4xl font-bold text-yellow-600 font-display">
+                  {title}
+                </a>
+              </Link>
+            </h3>
+            <span className="text-sm">{date}</span>
+          </header>
+          <section>
+            <p className="mb-8 text-lg">{description}</p>
+          </section>
+        </article>
+      ))}
+    </>
+  );
 }
 
-export default Index
-
 export async function getStaticProps() {
-    const configData = await import(`../siteconfig.json`)
+  const posts = getSortedPostsData();
 
-    const posts = getSortedPostsData()
-
-    return {
-        props: {
-            posts,
-            title: configData.default.title,
-        }
-    }
+  return {
+    props: {
+      posts,
+    },
+  };
 }

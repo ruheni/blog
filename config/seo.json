@@ -1,0 +1,15 @@
+{
+  "siteMetadata": {
+    "title": "Alex Ruheni | Maker, Explorer, Developer Advocate, Writer",
+    "author": {
+      "name": "Alex Ruheni",
+      "summary": "I learn, build and write about stuff. 🙂"
+    },
+    "description": "Hello there internet stranger👋🏾.\n This is my personal site - where I share my thoughts, learning experiences and occassional rants 🙈",
+    "siteUrl": "https://ruheni.dev",
+    "language": "en-US",
+    "social": {
+      "twitter": "ruheni_alex"
+    }
+  }
+}
