@@ -2,6 +2,7 @@ import Link from "next/link";
 import { SEO } from "@components/Seo";
 import { Bio } from "@components/Bio";
 import { getSortedPostsData } from "@utils/posts";
+import Date from '@components/date'
 
 export default function Home({ posts }) {
   return (
@@ -18,7 +19,7 @@ export default function Home({ posts }) {
                 </a>
               </Link>
             </h3>
-            <span className="text-sm">{date}</span>
+            <span className="text-sm"><Date dateString={date} /></span>
           </header>
           <section>
             <p className="mb-8 text-lg">{description}</p>
