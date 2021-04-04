@@ -350,6 +350,4 @@ I hope you liked this tutorial and learned something useful. The completed proje
 
 Do you have any suggestions of any libraries/frameworks you’d like to see paired with Prisma? Feel free to let us know in the discussion or create an [issue on GitHub](https://github.com/prisma/prisma-examples/issues).
 
-Happy hacking!
-![Prototyping_CRUDE_API](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/nrpbanmr1eyevabynuv1.png)
- 
+Happy hacking! 
