@@ -11,6 +11,7 @@
   "dependencies": {
     "clsx": "^1.1.1",
     "date-fns": "^2.19.0",
+    "globby": "^11.0.3",
     "imagemin-mozjpeg": "^9.0.0",
     "imagemin-optipng": "^8.0.0",
     "lazysizes": "^5.3.2",
@@ -19,6 +20,7 @@
     "next-compose-plugins": "^2.2.1",
     "next-optimized-images": "^2.6.2",
     "next-themes": "^0.0.14",
+    "prettier": "^2.2.1",
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "react-markdown": "^5.0.3",
@@ -26,6 +28,7 @@
     "react-toggle-dark-mode": "^1.0.4",
     "remark": "^13.0.0",
     "remark-html": "^13.0.1",
+    "rss": "^1.2.2",
     "typeface-ibm-plex-mono": "^1.1.13",
     "typeface-merriweather": "^1.1.13",
     "typeface-open-sans": "^1.1.13",
@@ -41,12 +44,11 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Jfelix61/nextjs-starter-blog.git"
+    "url": "git+https://github.com/ruheni/blog.git"
   },
-  "homepage": "https://github.com/Jfelix61/nextjs-starter-blog#readme",
+  "homepage": "https://ruheni.dev",
   "keywords": [
     "next.js",
-    "blog",
-    "template"
+    "blog"
   ]
 }

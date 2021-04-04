@@ -2,7 +2,6 @@ import Link from "next/link";
 import { SEO } from "@components/Seo";
 import { Bio } from "@components/Bio";
 import { getSortedPostsData } from "@utils/posts";
-import Layout from '@components/Layout'
 
 export default function Home({ posts }) {
   return (
@@ -13,7 +12,7 @@ export default function Home({ posts }) {
         <article key={slug}>
           <header className="mb-2">
             <h3 className="mb-2">
-              <Link href={"/post/[slug]"} as={`/post/${slug}`}>
+              <Link href={"/blog/[slug]"} as={`/blog/${slug}`}>
                 <a className="text-4xl font-bold text-yellow-600 font-display">
                   {title}
                 </a>
