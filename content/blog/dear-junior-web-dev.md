@@ -7,17 +7,19 @@ cover_image: https://images.unsplash.com/photo-1499750310107-5fef28a66643?ixlib=
 date: '2020-04-20'
 ---
 
-Hello, everyone, 👋. It's been a while since my last post on dev.to 😪. I have been procrastinating a lot the last few weeks but I'm now doing it 😋.
+Hello, everyone, 👋. 
+
+It's been a while since my last post on dev.to 😪. I have been procrastinating a lot the last few weeks but I'm now doing it 😋.
 
 Update: I landed an internship as a front-end developer 🥳.
 
-<video autoplay loop muted playsinline src="/assets/celebrate.mp4" type="video/mp4" alt="celebrate"></video>
+![celebrate](/assets/celebrate.gif)
 
 The last 3 months have been packed with deadlines, Angular and learning (both domain knowledge and my technical skills. I recently learnt I suck at coding (tee-hee), but I am confident that will change with time). It was actually my first time interacting with Angular and I can confirm that the learning curve has been **really really** steep (despite the frustration of understanding of how it works under the hood, it has pushed me out of my comfort zone and explore a new perspective building web applications).
 
 I have gained a couple of skills and knowledge/experience I would love to share with the rest of the community. I am in no way an expert I therefore recommend you take my advice with a grain of salt read on the topic, but I hope it will be of help. The list I produced is not exhaustive and in no order. Feel free sharing in the comments the important skills one must learn as a junior front-end developer.
 
-\*\*before the story telling begins, I'm in a small team of about six engineers, and I was assigned the task of working on the web platform for our product. Yes, I am responsible for all the bad choices on the UI. 😂😂
+\*\* before the story telling begins, I'm in a small team of about six engineers, and I was assigned the task of working on the web platform for our product. Yes, I am responsible for all the bad choices on the UI. 😂😂
 
 #### 1. Reactive Streams
 
@@ -43,8 +45,7 @@ If you are building a data driven application, there is a high likelihood you ha
 
 This is a concept I learnt a senior engineer working on a different product. It is simple and powerful as well. Spend some time every day, to learn a new concept that would improve your workflow/ productivity. I took the initiative to learn at least one new thing before I work on anything every day. With time, this creates a snowball effect and quality of your output is guaranteed to improve with time.
 
-<video autoplay loop muted playsinline src="/assets/ant-workout.mp4" type="video/mp4" alt="ant-workout"></video>
-
+![ant-workout](/assets/ant-workout.gif)
 #### 6. Asking the right questions
 
 When you are new, you are expected to get stuck. It is okay to get stuck often, domain knowledge and technical skills. It's happened more than once I've tried explaining my problem to another developer and the response I got was, "I don't understand your issue here". It's at that point that you realize you need to first try break down the problem into tiny bits and walk yourself through your logic first and try find gaps if there. I mostly write pseudocode on paper, find my challenge, google for a couple of minutes as I try what stack overflow gurus recommend before getting a senior developer unblock me.

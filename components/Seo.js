@@ -31,8 +31,8 @@ export function SEO({ title, description = "", cannonical_url = "", cover_image 
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={metaDescription} />
       <meta name="twitter:creator" content={siteMetadata.social.twitter} />
-      <link rel="icon" type="image/png" href="/static/favicon.ico" />
-      <link rel="apple-touch-icon" href="/static/favicon.ico" />
+      <link rel="icon" type="image/png" href="/favicon.ico" />
+      <link rel="apple-touch-icon" href="/favicon.ico" />
       {cannonical_url !== "" ? <Link rel="canonical" href={cannonical_url}></Link> : null}
     </Head>
   );
