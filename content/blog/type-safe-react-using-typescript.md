@@ -3,6 +3,7 @@ title: Type-safe React using TypeScript
 published: true
 description: Let's improve the quality of your React app by using TypeScript 😉
 tags: react, typescript, frontend
+date: '2020-10-13' 
 cover_image: https://i2.wp.com/blog.alexdevero.com/wp-content/uploads/2019/12/02-12-19-getting-started-with-react-and-typescript-pt1.jpg?resize=768%2C476&ssl=1
 cannonical_url: 'https://dev.to/msambassadorske/type-safe-react-using-typescript-1dkh'
 ---

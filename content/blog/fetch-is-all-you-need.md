@@ -3,6 +3,7 @@ title: Fetch() is All you Need
 published: true
 description: Axios is great, but maybe fetch is what you really need
 tags: react, typescript, frontend
+date: '2020-10-27'
 cover_image: https://i2.wp.com/blog.alexdevero.com/wp-content/uploads/2019/12/02-12-19-getting-started-with-react-and-typescript-pt1.jpg?resize=768%2C476&ssl=1
 cannonical_url: 'https://dev.to/ruheni/fetch-is-all-you-need-e8f'
 ---

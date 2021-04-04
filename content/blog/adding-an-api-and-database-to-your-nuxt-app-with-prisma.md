@@ -3,6 +3,7 @@ title: Adding an API and database to your Nuxt App with Prisma
 published: true
 description: This tutorial explores how to build a fullstack application using Nuxt and Prisma for database access.
 tags: javascript, nuxt, vue, express
+date: '2021-02-18'
 cover_image: https://paper-attachments.dropbox.com/s_00AF37BD6AC8393E927CA91EEFB0A63999A7CA54EDBC5EFA45354BC6B94E1BB9_1613649658449_Prisma_x_Nuxt.png
 cannonical_url: https://dev.to/prisma/adding-an-api-and-database-to-your-nuxt-app-with-prisma-2nlp
 ---

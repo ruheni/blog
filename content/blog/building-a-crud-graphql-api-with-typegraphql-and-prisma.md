@@ -3,6 +3,7 @@ title: Building a GraphQL CRUD API for your Database with TypeGraphQL & Prisma
 published: true
 description: Learn how to quickly prototype a GraphQL API with Apollo-Server, Nexus, Prisma and TypeGraphQL
 tags: 
+date: '2021-02-18'
 cover_image: https://dev-to-uploads.s3.amazonaws.com/uploads/articles/r99tjly26f4id0w82mau.png
 cannonical_url: https://dev.to/prisma/prototyping-a-crud-api-with-typegraphql-and-prisma-for-your-database-424c
 ---
