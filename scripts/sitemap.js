@@ -8,7 +8,8 @@ const prettier = require('prettier');
 
   // Ignore Next.js specific files (e.g., _app.js) and API routes.
   const pages = await globby([
-    'pages/**/*{.js,.mdx,.md}',
+    'pages/*.js',
+    'content/**/*.md',
     '!pages/_*.js',
     '!pages/api'
   ]);
@@ -19,8 +20,9 @@ const prettier = require('prettier');
       .map((page) => {
         const path = page
           .replace('pages', '')
+          .replace('content', '')
           .replace('.js', '')
-          .replace('.mdx', '');
+          .replace('.md', '');
         const route = path === '/index' ? '' : path;
 
         return `

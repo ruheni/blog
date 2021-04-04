@@ -1,10 +1,8 @@
-import matter from "gray-matter";
 import fs from "fs";
+import matter from "gray-matter";
 import path from 'path';
-import remark from 'remark'
-import html from 'remark-html'
 
-const postsDirectory = path.join(process.cwd(), 'content');
+const postsDirectory = path.join(process.cwd(), 'content/blog');
 
 // Get day in format: Month day, Year. e.g. April 19, 2020
 function getFormattedDate(date) {
