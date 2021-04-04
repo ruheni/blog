@@ -14,6 +14,7 @@ export default function Post({ frontmatter, excerpt, content }) {
       <SEO
         title={frontmatter.title}
         description={frontmatter.description || excerpt}
+        cover_image={frontmatter.cover_image}
       />
 
       <article>

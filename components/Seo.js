@@ -1,12 +1,15 @@
 import Head from "next/head";
 import Link from 'next/link'
+import { useRouter } from 'next/router'
 
 import { getSiteMetaData } from "@utils/helpers";
 
-export function SEO({ title, description = "", cannonicalURL = "" }) {
+export function SEO({ title, description = "", cannonical_url = "", cover_image }) {
   const siteMetadata = getSiteMetaData();
 
   const metaDescription = description || siteMetadata.description;
+
+  const router = useRouter()
 
   return (
     <Head>
@@ -21,13 +24,16 @@ export function SEO({ title, description = "", cannonicalURL = "" }) {
         property="og:description"
         content={metaDescription}
       />
+      <meta property="og:url" content={router.pathname} key="ogurl" />
+      <meta property="og:image" content={cover_image} key="ogimage" />
+      <meta property="og:site_name" content={siteMetadata.title} key="ogsitename" />
       <meta name="twitter:card" content="summary" />
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={metaDescription} />
       <meta name="twitter:creator" content={siteMetadata.social.twitter} />
       <link rel="icon" type="image/png" href="/static/favicon.ico" />
       <link rel="apple-touch-icon" href="/static/favicon.ico" />
-      {cannonicalURL !== "" ? <Link rel="canonical" href={cannonicalURL}></Link> : null}
+      {cannonical_url !== "" ? <Link rel="canonical" href={cannonical_url}></Link> : null}
     </Head>
   );
 }
