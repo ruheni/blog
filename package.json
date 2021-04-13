@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "clsx": "1.1.1",
-    "date-fns": "2.19.0",
+    "date-fns": "2.20.3",
     "globby": "11.0.3",
     "imagemin-mozjpeg": "9.0.0",
     "imagemin-optipng": "8.0.0",
