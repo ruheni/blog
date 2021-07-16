@@ -1,6 +1,6 @@
 baseURL = "https://ruheni.dev"
 languageCode = "en-us"
-title = "Alex Ruheni"
+title = "Alex Ruheni - learning, building, experimenting, and sharing."
 theme = "hello-friend"
 paginate = 10
 
@@ -17,8 +17,8 @@ paginate = 10
 
 [languages]
   [languages.en]
-    title = "Alex Ruheni"
-    subtitle = ""
+    title = "Alex Ruheni - learning, building, experimenting, and sharing."
+    subtitle = "Hello there internet stranger👋🏾.\n Welcome to this tiny corner of the interenet - where I share my ideas, thoughts, learning experiences, and experiments"
     keywords = ""
     copyright = ""
     menuMore = "Show more"
