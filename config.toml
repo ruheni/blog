@@ -26,9 +26,9 @@ paginate = 10
     readOtherPosts = "Read other posts"
     newerPosts = "Newer posts"
     olderPosts = "Older posts"
-    minuteReadingTime = "min reading"
-    dateFormateSingle = "2006-01-02"
-    dateFormatList = "2006-01-02"
+    minuteReadingTime = "minute read"
+    dateFormatList = "January 2, 2006"
+    dateFormatSingle = "January 2, 2006"
 
   [languages.en.params.logo]
     logoText = "Alex Ruheni"
@@ -44,3 +44,7 @@ paginate = 10
   #     identifier = "projects"
   #     name = "Projects"
   #     url = "/projects"
+    #   [[languages.en.menu.main]]
+  #     identifier = "About"
+  #     name = "About"
+  #     url = "/about"
